@@ -8,6 +8,11 @@
     background-color: #fafafa;
     min-height: 3.3em;
 
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-foreground;
+      background-color: $color-dark-background;
+    }
+
     .codeflask__textarea {
       z-index: 1;
       color: transparent;
