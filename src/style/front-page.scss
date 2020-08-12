@@ -8,6 +8,10 @@
     animation: updown 2.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+
+    @media (prefers-color-scheme: dark) {
+      filter: grayscale(40%);
+    }
   }
 
   @keyframes updown {
@@ -39,9 +43,17 @@
     border-radius: 1em;
     box-shadow: none;
 
+    @media (prefers-color-scheme: dark) {
+      background-color: #646464;
+    }
+
     &:hover {
       background-color: #b8b8b8;
       transition: ease-in-out 0.2s;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: #7e7e7e;
+      }
     }
   }
 
@@ -72,6 +84,10 @@ h1 {
   text-align: center;
   font-weight: bold;
   color: rgb(63, 63, 63);
+  
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-header;
+  }
 
   @media only screen and (max-width: 800px) {
     margin: 0 0.5em 2em 0.5em;

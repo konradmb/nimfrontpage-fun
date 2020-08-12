@@ -7,6 +7,9 @@
     margin: 1em auto 1.5em auto;
     max-width: 50ch;
     color: rgb(43, 43, 43);
+    @media (prefers-color-scheme: dark) {
+      color: rgb(255, 255, 255);
+    }
   }
 
   & > .nim-code {
@@ -21,6 +24,10 @@
     text-align: center;
     font-weight: bold;
     color: rgb(63, 63, 63);
+    
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-header;
+    }
   }
 
   & > a {

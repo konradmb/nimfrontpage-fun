@@ -7,6 +7,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat';
+
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-foreground;
+    background-color: $color-dark-background;
+  }
 }
 
 a {
@@ -36,6 +41,10 @@ a {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (prefers-color-scheme: dark) {
+      filter: grayscale(60%);
+    }
   }
 }
 
@@ -94,5 +103,9 @@ a {
     color: white;
     background-color: $color-main;
     border-color: $color-main;
+
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-background;
+    }
   }
 }

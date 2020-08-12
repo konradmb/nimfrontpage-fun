@@ -23,6 +23,11 @@ pre[class*='language-'] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-foreground;
+    background-color: $color-dark-background;
+  }
 }
 
 code[class*='language-']::-moz-selection,
